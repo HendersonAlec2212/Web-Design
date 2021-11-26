@@ -1,0 +1,50 @@
+/*https://www.w3schools.com/css/css3_fonts.asp*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: white;
+}
+
+.navbar {
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color:lightskyblue;
+    padding: 2.5% 5% 1.5% 5%;
+    font-size: 32px;
+}
+.navbar-link {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    right: 0px;
+    background-color: rgb(174, 179, 179);
+    height: 100%;
+    max-width: 50%;
+    min-width: 20%;
+}
+
+.navbar-link > div {
+    width: 150px;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    background-color: rgb(63, 61, 61);
+}
+
+.nav-link a {
+    
+}
+
+.nav-link a:hover {
+    opacity: 0.5;
+}
+
