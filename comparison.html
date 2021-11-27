@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+<title>Click a plot for more info!</title>    
+<!-- Mention font here from the css (optional)-->
+</head>
+
+<!--Navbar start-->
+<body>
+    <div class="navbar">
+        <div>
+            <a href=index.html id=home_button>Home</a>
+        </div>
+
+        <div class="navbar-link">
+
+            <div class="navb-link dropdown">
+                <span>Plots</span>
+                <div class="dropdown-content">
+                    <li><a href="max_temp.html">Max Temp.</a></li>
+                    <hr>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <hr>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    <hr>
+                    <li><a href="wind_speed.html">Wind Speed</a></li>
+                </div>
+            </div>
+
+            <div class="navb-link">
+                <a href="comparison.html">Comparison</a></div>
+
+            <div class="navb-link">
+                <a href="data_page.html">Data</a></div>
+
+        </div>
+    </div> 
+<!--Navbar End-->
+
+
+<div class="container">
+    <div class="quad-box">
+        <h4>Here are all plots for quick comparison.</h4>
+        Click each photo for more in-depth analysis.
+        <hr>
+    </div>
+    <div class= "row table-textbox">
+        <div class="col-xs-12 col-md-6">
+            <h4 class="centered-text">Latitude vs. Temperature</h4>
+            <a href="max_temp.html"><img src="images/max_temp.png" alt="Latitude vs. Max Temperature" class="border-darkgrey" style="width:100%"></a>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <h4 class="centered-text">Latitude vs. Humidity</h4>
+            <a href="humidity.html"><img src="images/humidity.png" alt="Latitude vs. Humidity" class="border-darkgrey" style="width:100%"></a>
+        </div>
+        
+        <div class="col-xs-12 col-md-6">
+            <h4 class="centered-text">Latitude vs. Cloudiness</h4>
+            <a href="cloudiness.html"><img src="images/cloudiness.png" alt="Latitude vs. Cloudiness" class="border-darkgrey" style="width:100%"></a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <h4 class="centered-text">Latitude vs. Wind Speed</h4>
+            <a href="wind_speed.html"><img src="images/wind_speed.png" alt="Latitude vs. Wind Speed" class="border-darkgrey" style="width:100%"></a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>

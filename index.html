@@ -1,23 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="C:\Users\Alec\Documents\Programming Resources\Boot Camp\11_Web_Dev\Homework\css\styles.css">
+<style>
+
+</style>
+
+    <link rel="stylesheet" href="css\styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-<title>Name of the webpage</title>    
+    
+<title>Weather vs. Latitude</title>    
 <!-- Mention font here from the css (optional)-->
 </head>
 
+<!--Navbar start-->
 <body>
     <div class="navbar">
-        Latitude
+        <div>
+            <a href=index.html id=home_button>Home</a>
+        </div>
+
         <div class="navbar-link">
-            <div class="nav-link">link</div>
-            <div class="nav-link">link</div>
-            <div class="nav-link">link</div>
-            <div class="nav-link">link</div>
+
+            <div class="navb-link dropdown">
+                <span>Plots</span>
+                <div class="dropdown-content">
+                    <li><a href="max_temp.html">Max Temp.</a></li>
+                    <hr>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <hr>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    <hr>
+                    <li><a href="wind_speed.html">Wind Speed</a></li>
+                </div>
+            </div>
+
+            <div class="navb-link">
+                <a href="comparison.html">Comparison</a></div>
+
+            <div class="navb-link">
+                <a href="data_page.html">Data</a></div>
+
         </div>
     </div> 
+<!--Navbar End-->
+
+
+    <!-- Intro Start-->
+    <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <article id="intro-area" class="border-darkgrey">
+              <h1 class="centered-text" >Summary: Latitude vs. X</h1>
+              <hr>
+              <a href="max_temp.html"><img src="images/max_temp.png" alt="temp rises as equator equals to zero" id="img-intro"/></a>
+              <p>The purpose of this project was to anaylze the change in weather attributes as one approaches the equator. To accomplish this we first pulled weather measurements from 500 cities.</p>
+              <p>After assembling the dataset, we used Matplotlib to plot each of the following: temperature, cloudiness, wind speed, and humidity versus the latitude resulting in a handful of neat visulatizations.</p>
+              <p>This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+  
+            <!-- Sidebar Start -->
+            <section id="sidebar-area" class="border-darkgrey">
+              <div class="sidebar-content">
+                <h2 class="centered-text">Visualizations</h2>
+                <hr>
+                <div>
+                  <a href="max_temp.html"><img src="images/max_temp.png" alt="Latitude vs. Max Temperature" class= "img-sidebar"></a>
+                  <a href="humidity.html"><img src="images/humidity.png" alt="Latitude vs. Humidity" class="img-sidebar"></a>
+                  <a href="cloudiness.html"><img src="images/cloudiness.png" alt="Latitude vs. Cloudiness" class="img-sidebar"></a>
+                  <a href="wind_speed.html"><img src="images/wind_speed.png" alt="Latitude vs. Wind Speed" class="img-sidebar"></a>
+                </div>
+              </div>
+            </section>
+            <!-- Sidebar End -->
+  
+          </div>
+        </section>
+      </div>
+
+
+
 
 
 </body>
