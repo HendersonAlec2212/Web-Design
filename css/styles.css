@@ -43,9 +43,19 @@ img:hover {
     background-color: black;
     color: lightskyblue;
     
+    
 }
 tr:hover {
-    color: white;
+    color: rgb(0, 0, 0);
+    background-color: rgb(221, 221, 221);
+    border-color: rgb(6, 83, 128);
+    border-width: 5px;
+    font-weight: bold;
+
+}
+table, tr, td {
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
 }
 
 /*------------------------------------------ nav bar start------------------------------------------ */
